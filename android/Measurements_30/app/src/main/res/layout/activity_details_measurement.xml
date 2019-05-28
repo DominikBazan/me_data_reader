@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.DetailsMeasurementActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <!--Pola tekstowe statyczne-->
+    <TextView
+        android:id="@+id/nameInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Data:"
+        android:textSize="@dimen/text_size_default"
+        android:gravity="center"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/dateOfSelectedMeasurement"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/valueOfMeasurement_tx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wartość:"
+        android:textSize="@dimen/text_size_default"
+        android:gravity="center"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/valueOfMeasurement"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dateOfSelectedMeasurement" />
+
+    <TextView
+        android:id="@+id/nameOfDeviceOfMeasurement_tx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nazwa urządzenia pomiarowego:"
+        android:textSize="@dimen/text_size_default"
+        android:gravity="center"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/nameOfDeviceOfMeasurement"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/valueOfMeasurement" />
+
+    <!--Pola tekstowe dynamiczne-->
+    <TextView
+        android:id="@+id/dateOfSelectedMeasurement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="przykładowa data"
+        android:textSize="@dimen/text_size_default"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/valueOfMeasurement_tx"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameInfo" />
+
+    <TextView
+        android:id="@+id/valueOfMeasurement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="przykładowa wartość"
+        android:textSize="@dimen/text_size_default"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/nameOfDeviceOfMeasurement_tx"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/valueOfMeasurement_tx" />
+
+    <TextView
+        android:id="@+id/nameOfDeviceOfMeasurement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="przykładowa nazwa"
+        android:textSize="@dimen/text_size_default"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/okButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameOfDeviceOfMeasurement_tx" />
+
+    <!--Przyciski-->
+    <Button
+        android:id="@+id/okButton"
+        android:layout_width="241dp"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:textSize="@dimen/text_size_small_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameOfDeviceOfMeasurement" />
+
+</android.support.constraint.ConstraintLayout>

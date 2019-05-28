@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.SettingsEmailActivity"
+    tools:layout_editor_absoluteY="80dp">
+
+    <!--android:text="@string/serverEmailAddress_tx"-->
+    <EditText
+        android:id="@+id/newEmailAddress_textField"
+        android:layout_width="411dp"
+        android:layout_height="60dp"
+        android:ems="10"
+        android:gravity="center"
+        android:text="adres email..."
+        android:textSize="@dimen/text_size_big_input"
+        app:layout_constraintBottom_toTopOf="@+id/updateSettingsButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email_address" />
+
+    <TextView
+        android:id="@+id/email_address"
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="E-mail:"
+        android:textSize="@dimen/text_size_default"
+        app:layout_constraintBottom_toTopOf="@+id/newEmailAddress_textField"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/updateSettingsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zatwierdź"
+        android:textSize="@dimen/text_size_small_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newEmailAddress_textField" />
+
+</android.support.constraint.ConstraintLayout>

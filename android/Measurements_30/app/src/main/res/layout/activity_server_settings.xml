@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.SettingsServerActivity"
+    tools:layout_editor_absoluteY="80dp">
+
+    <TextView
+        android:id="@+id/server_address"
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Adres serwera:"
+        android:textSize="@dimen/text_size_default"
+        app:layout_constraintBottom_toTopOf="@+id/newAddress_textField"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <!--android:text="@string/serverAddress_tx"-->
+    <EditText
+        android:id="@+id/newAddress_textField"
+        android:layout_width="411dp"
+        android:layout_height="60dp"
+        android:ems="10"
+        android:gravity="center"
+        android:text="adres serwera..."
+        android:textSize="@dimen/text_size_big_input"
+        app:layout_constraintBottom_toTopOf="@+id/updateSettingsButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/server_address" />
+
+    <Button
+        android:id="@+id/updateSettingsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zatwierdź"
+        android:textSize="@dimen/text_size_small_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newAddress_textField" />
+
+</android.support.constraint.ConstraintLayout>

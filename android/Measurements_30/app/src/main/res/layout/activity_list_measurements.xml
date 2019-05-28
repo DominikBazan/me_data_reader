@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ListMeasurementsActivity">
+
+    <include layout="@layout/content_list_measurements" />
+
+    <!--floating action button - Dodawanie nowego pomiaru manualnie-->
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/fab_margin"
+            app:backgroundTint="@color/colorAccent"
+            app:fabSize="normal"
+            android:src="@drawable/ic_action_compose"
+            android:id="@+id/addMeasurementLManual" />
+    </android.support.design.widget.CoordinatorLayout>
+
+    <!--floating action button - Dodawanie nowego pomiaru za pomocą kamery-->
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|start"
+            android:layout_margin="@dimen/fab_margin"
+            app:backgroundTint="@color/colorPrimaryDark"
+            app:fabSize="normal"
+            android:src="@drawable/ic_action_compose"
+            android:id="@+id/addMeasurementLCamera" />
+    </android.support.design.widget.CoordinatorLayout>
+
+    <!--floating action button - Wysyłanie pomiarów-->
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_margin="@dimen/fab_margin"
+            app:backgroundTint="@color/colorOfSendMeasurementsButton"
+            app:fabSize="normal"
+            app:srcCompat="@drawable/ic_send_email"
+            android:id="@+id/sendMeasurements" />
+    </android.support.design.widget.CoordinatorLayout>
+
+</android.support.constraint.ConstraintLayout>

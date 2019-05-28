@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4abaad</color>
+    <color name="colorPrimaryDark">#003E1F</color>
+    <color name="colorAccent">#BA2D0B</color>
+    <color name="colorOfSendMeasurementsButton">#b7950d</color>
+</resources>

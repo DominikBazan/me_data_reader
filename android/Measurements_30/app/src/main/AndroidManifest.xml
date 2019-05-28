@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="agh.dfbazan.measurements_3_0">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/systemName_tx"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activities.InfoAppActivity"
+            android:label="@string/info_app_tx"
+            android:parentActivityName=".activities.MainMenuActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.AddingDeviceActivity"
+            android:label="@string/new_device_tx"
+            android:parentActivityName=".activities.ListDevicesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ListDevicesActivity"
+            android:label="@string/device_list_tx"
+            android:parentActivityName=".activities.MainMenuActivity" />
+        <activity
+            android:name=".activities.DetailsDeviceActivity"
+            android:label="@string/details_device_tx"
+            android:parentActivityName=".activities.ListDevicesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ChoiceDeviceActivity"
+            android:label="@string/device_choice_tx"
+            android:noHistory="true"
+            android:parentActivityName=".activities.MainMenuActivity" />
+        <activity
+            android:name=".activities.ListMeasurementsActivity"
+            android:label="@string/measurements_list_tx"
+            android:parentActivityName=".activities.MainMenuActivity" />
+        <activity
+            android:name=".activities.AddingMeasurementManuallyActivity"
+            android:label="@string/addNewMeasurement_tx"
+            android:parentActivityName=".activities.ListMeasurementsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.DetailsMeasurementActivity"
+            android:label="@string/details_measurement_tx"
+            android:parentActivityName=".activities.ListMeasurementsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.AddingMeasurementCameraActivity"
+            android:label="@string/addMeasurementCamera_tx"
+            android:parentActivityName=".activities.ListMeasurementsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ListChoosingValuesActivity"
+            android:label="@string/detectedValues_tx"
+            android:noHistory="true"
+            android:parentActivityName=".activities.AddingMeasurementCameraActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.LoginActivity"
+            android:label="@string/systemName_tx"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.MainMenuActivity"
+            android:label="@string/systemName_tx"
+            android:parentActivityName=".activities.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.CorrectingAndAddingMeasurementActivity"
+            android:label="@string/measurementCorrection_tx"
+            android:parentActivityName=".activities.AddingMeasurementCameraActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ChangePasswordActivity"
+            android:label="@string/changePassword_tx"
+            android:parentActivityName=".activities.MainMenuActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.SettingsEmailActivity"
+            android:label="@string/email_settings_tx"
+            android:parentActivityName=".activities.MainMenuActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.SettingsServerActivity"
+            android:label="@string/server_settings_tx"
+            android:parentActivityName=".activities.LoginActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>
